@@ -1,0 +1,33 @@
+{
+  "product": "JT App Manager",
+  "category": "Application lifecycle",
+  "schemaVersion": 1,
+  "templates": [
+    {
+      "id": "desktop-release",
+      "name": "Desktop App Release",
+      "checks": [
+        "Confirm version and changelog",
+        "Run unit and smoke tests",
+        "Build each supported OS and architecture",
+        "Verify installer signatures where configured",
+        "Test fresh install and upgrade",
+        "Confirm rollback or uninstall path",
+        "Publish only to the product repository"
+      ]
+    },
+    {
+      "id": "feature-readiness",
+      "name": "Feature Readiness Review",
+      "checks": [
+        "Feature works in a real user flow",
+        "Errors are handled visibly",
+        "Accessibility and keyboard behavior checked",
+        "Data export/backup behavior reviewed",
+        "Privacy and permissions documented",
+        "Automated tests added",
+        "Status accurately marked implemented"
+      ]
+    }
+  ]
+}
